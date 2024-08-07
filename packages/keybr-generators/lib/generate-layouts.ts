@@ -25,6 +25,7 @@ for (const [id, dict] of [
   ["de_noted", importKeymap("layouts/de_noted.json")],
   ["el_gr", importCldr("cldr-keyboards-43.0/keyboards/windows/el-t-k0-windows.xml")],
   ["en_canary", importKeymap("layouts/en_canary.json")],
+  ["en_steno", importKeymap("layouts/en_steno.json")],
   ["en_canary_matrix", importKeymap("layouts/en_canary_matrix.json")],
   ["en_colemak", undead(importKlc("layouts/colemak.klc"))],
   ["en_colemak_dh_ansi", undead(importKlc("layouts/colemak_dh_ansi_us.klc"))],

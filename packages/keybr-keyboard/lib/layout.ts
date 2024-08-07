@@ -19,6 +19,22 @@ export class Layout implements XEnumItem {
       Geometry.MATRIX,
     ),
   );
+
+  static readonly EN_STENO = new Layout(
+    /* id= */ "en-steno",
+    /* xid= */ 0xff,
+    /* name= */ "Steno",
+    /* family= */ "steno",
+    /* language= */ Language.EN,
+    /* emulate= */ true,
+    /* geometries= */ new Enum(
+      Geometry.ANSI_101,
+      Geometry.ANSI_101_FULL,
+      Geometry.ISO_102,
+      Geometry.ISO_102_FULL,
+      Geometry.MATRIX,
+    ),
+  );
   static readonly EN_DVORAK = new Layout(
     /* id= */ "en-dvorak",
     /* xid= */ 0x18,
@@ -893,6 +909,7 @@ export class Layout implements XEnumItem {
 
   static readonly ALL = new XEnum<Layout>(
     Layout.EN_US,
+    Layout.EN_STENO,
     Layout.EN_DVORAK,
     Layout.EN_DVORAK_PROG,
     Layout.EN_COLEMAK,
